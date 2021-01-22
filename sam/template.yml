@@ -1,0 +1,25 @@
+AWSTemplateFormatVersion: '2010-09-09'
+Transform: AWS::Serverless-2016-10-31
+
+Resources:
+  MyApiInferenceFunction:
+    Type: AWS::Serverless::Function
+    Properties:
+      PackageType: Image
+      ImageConfig:
+        EntryPoint: ["/lambda-entrypoint.sh"]
+        Command: ["main.handler"]
+      MemorySize: 2048
+      Timeout: 30
+      Events:
+        Proxy:
+          Type: HttpApi
+    Metadata:
+      Dockerfile: Dockerfile
+      DockerContext: ../src
+      DockerTag: latest
+
+Outputs:
+  MyApi:
+    Description: "URL of your API endpoint"
+    Value: !Sub "https://${ServerlessHttpApi}.execute-api.${AWS::Region}.${AWS::URLSuffix}/"

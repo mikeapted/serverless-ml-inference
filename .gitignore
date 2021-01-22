@@ -1,0 +1,8 @@
+*.pkl
+
+.aws-sam
+samconfig.toml
+
+.DS_Store
+
+scratch
