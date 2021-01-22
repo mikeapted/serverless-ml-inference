@@ -19,6 +19,14 @@ The instructions below cover installation on Unix-based Operating systems like m
 
 If you have not already, configure the aws cli to interact with AWS services using aws configure.
 
+### Submodules
+
+This example uses two CDK applications which are kept in their own repositories so you will need to initialize them:
+
+```shell
+git submodule update --remote --recursive
+```
+
 ### Deployment
 
 1. [Model Training](docs/model_training.md)
