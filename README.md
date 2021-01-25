@@ -12,10 +12,10 @@ The instructions below cover installation on Unix-based Operating systems like m
 ### Requirements
 - Git
 - Docker
-- aws cli
-- node/npm
-- AWS SAM
-- AWS CDK
+- AWS CLI
+- NodeJS/NPM
+- AWS SAM CLI
+- AWS CDK CLI
 
 If you have not already, configure the aws cli to interact with AWS services using aws configure.
 
@@ -47,11 +47,10 @@ Disclaimer: Deploying the demo applications contained in this repository will po
 
 ## Links
 
-https://pypi.org/project/mangum/
-https://fastapi.tiangolo.com
+- https://pypi.org/project/mangum/
+- https://fastapi.tiangolo.com
 
-
-https://www.geeksforgeeks.org/deploying-ml-models-as-api-using-fastapi/
-https://faisalmalikwp.medium.com/simple-machine-learning-model-deployment-using-fastapi-5a6388db985f
-https://medium.com/analytics-vidhya/python-fastapi-and-aws-lambda-container-3e524c586f01
-https://www.betterdatascience.com/how-to-build-and-deploy-a-machine-learning-model-with-fastapi/
+- https://www.geeksforgeeks.org/deploying-ml-models-as-api-using-fastapi/
+- https://faisalmalikwp.medium.com/simple-machine-learning-model-deployment-using-fastapi-5a6388db985f
+- https://medium.com/analytics-vidhya/python-fastapi-and-aws-lambda-container-3e524c586f01
+- https://www.betterdatascience.com/how-to-build-and-deploy-a-machine-learning-model-with-fastapi/
