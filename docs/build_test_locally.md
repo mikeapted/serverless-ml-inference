@@ -15,7 +15,7 @@ cp ../model/iris_model.pkl .
 Then we build our container:
 
 ```shell
-docker build -t myapi .
+docker build -t myapiinferencefunction .
 ```
 
 ### Run the API locally with just FastAPI
@@ -23,7 +23,7 @@ docker build -t myapi .
 We can test a traditional FastAPI version of our container by overriding the ENTRYPOINT/CMD when running it:
 
 ```shell
-docker run -d --entrypoint uvicorn -p 80:80 myapi main:app --host 0.0.0.0 --port 80
+docker run -d --entrypoint uvicorn -p 80:80 myapiinferencefunction main:app --host 0.0.0.0 --port 80
 ```
 
 and then test that API using curl and standard JSON payload for the data when making a prediction:
