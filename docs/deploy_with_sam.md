@@ -5,6 +5,8 @@
 First we will build our Docker image using SAM, and generate our deployment template:
 
 ```shell
+cd sam
+
 sam build
 ```
 
@@ -31,8 +33,29 @@ curl -d @event.container.predict.json \
 ```
 ### Deploy
 
+Before we deploy we need an Elastic Container Registry to house our docker images:
+
+```shell
+aws ecr create-repository --repository-name my-api-repo \
+--image-tag-mutability IMMUTABLE --image-scanning-configuration scanOnPush=true
+```
+
 ```shell
 sam deploy --guided
+```
+
+You can accept most defaults, and supply the following parameters:
+
+```
+Setting default arguments for 'sam deploy'
+	=========================================
+	Stack Name [sam-app]: my-sam-api
+	AWS Region [us-east-1]: 
+	Image Repository for MyApiInferenceFunction: XXXXXXXXXXXX.dkr.ecr.us-east-1.amazonaws.com/my-api-repo
+	  myapiinferencefunction:latest to be pushed to XXXXXXXXXXXX.dkr.ecr.us-east-1.amazonaws.com/my-api-repo:myapiinferencefunction-147bc21eb6a5-latest
+
+	SAM configuration file [samconfig.toml]: 
+	SAM configuration environment [default]: 
 ```
 
 ## Test
@@ -56,4 +79,18 @@ curl -X POST -H "Content-Type: application/json" \
 sam logs -n MyApiInferenceFunction --stack-name my-api --tail
 sam logs -n MyApiInferenceFunction --stack-name my-api -s '10min ago' -e '2min ago'
 sam logs -n MyApiInferenceFunction --stack-name my-api --filter "sepal_length"
+```
+
+### Cleanup
+
+If you are done experimenting with the API you can tear down the resources by deleting the CloudFormation stack from the AWS Console, or using the commans:
+
+```shell
+
+```
+
+You can now return to the project root.
+
+```shell
+cd ..
 ```

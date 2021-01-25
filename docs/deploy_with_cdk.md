@@ -36,3 +36,11 @@ aws logs tail $CDK_LOG_GROUP --follow
 aws logs tail $CDK_LOG_GROUP --since 5m
 aws logs tail $CDK_LOG_GROUP --filter-pattern "sepal"
 ```
+
+### Cleanup
+
+You can now return to the project root.
+
+```shell
+cd ..
+```

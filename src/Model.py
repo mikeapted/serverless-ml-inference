@@ -14,7 +14,7 @@ class IrisSpecies(BaseModel):
 class IrisModel:
     # Class constructor which loads the model
     def __init__(self):
-        self.model_fname_ = '/tmp/iris_model.pkl'
+        self.model_fname_ = '/iris_model.pkl'
         self.model = joblib.load(self.model_fname_)
             
     # Make a prediction based on the user-entered data

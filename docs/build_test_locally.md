@@ -7,6 +7,8 @@ We will now use our model artifact to build a FastAPI container, which will serv
 First, we need to copy our model artifcat from Step 1 to this directory:
 
 ```shell
+cd src
+
 cp ../model/iris_model.pkl .
 ```
 
@@ -64,4 +66,10 @@ curl -d @../events/event.lambda.root.json \
 curl -X POST -H "Content-Type: application/json" \
   -d @../events/event.lambda.predict.json \
   "http://localhost:9000/2015-03-31/functions/function/invocations"
+```
+
+You can now return to the project root.
+
+```shell
+cd ..
 ```
