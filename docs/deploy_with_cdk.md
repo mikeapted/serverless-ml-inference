@@ -6,8 +6,6 @@
 cdk bootstrap
 ```
 
-?SAM Local testing?
-
 ### Deploy
 
 ```shell
@@ -38,6 +36,12 @@ aws logs tail $CDK_LOG_GROUP --filter-pattern "sepal"
 ```
 
 ### Cleanup
+
+If you are done experimenting with the API you can tear down the resources by deleting the CloudFormation stack from the AWS Console, or using the command:
+
+```shell
+cdk destroy
+```
 
 You can now return to the project root.
 

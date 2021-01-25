@@ -91,7 +91,7 @@ sam logs -n MyApiInferenceFunction --stack-name my-sam-api --filter "sepal_lengt
 
 ### Cleanup
 
-If you are done experimenting with the API you can tear down the resources by deleting the CloudFormation stack from the AWS Console, or using the commans:
+If you are done experimenting with the API you can tear down the resources by deleting the CloudFormation stack from the AWS Console, or using the command:
 
 ```shell
 aws cloudformation delete-stack --stack-name my-sam-api
