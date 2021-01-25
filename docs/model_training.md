@@ -3,6 +3,8 @@
 We will leverage a Docker container to train our model.
 
 ```shell
+cd model
+
 ./train.sh
 ```
 
