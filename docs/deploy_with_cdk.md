@@ -21,8 +21,8 @@ cdk deploy
 ### Test
 
 ```shell
-export CDK_URL=<URL from the SAM deployment output>
-export CDK_LOG_GROUP=<URL from the SAM deployment output>
+export CDK_URL=<URL from the CDK deployment output>
+export CDK_LOG_GROUP=<URL from the CDK deployment output>
 
 curl "${CDK_URL}/"
 
