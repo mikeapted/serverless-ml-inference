@@ -47,13 +47,21 @@ sam deploy --guided
 You can accept most defaults, and supply the following parameters:
 
 ```
-Setting default arguments for 'sam deploy'
+	Looking for config file [samconfig.toml] :  Not found
+
+	Setting default arguments for 'sam deploy'
 	=========================================
 	Stack Name [sam-app]: my-sam-api
-	AWS Region [us-east-1]: 
+	AWS Region [us-east-1]: us-east-1
 	Image Repository for MyApiInferenceFunction: XXXXXXXXXXXX.dkr.ecr.us-east-1.amazonaws.com/my-api-repo
-	  myapiinferencefunction:latest to be pushed to XXXXXXXXXXXX.dkr.ecr.us-east-1.amazonaws.com/my-api-repo:myapiinferencefunction-147bc21eb6a5-latest
+	  myapiinferencefunction:latest to be pushed to XXXXXXXXXXXX.dkr.ecr.us-east-1.amazonaws.com/my-api-repo:myapiinferencefunction-XXXXXXXXXXXX-latest
 
+	#Shows you resources changes to be deployed and require a 'Y' to initiate deploy
+	Confirm changes before deploy [y/N]: Y
+	#SAM needs permission to be able to create roles to connect to the resources in your template
+	Allow SAM CLI IAM role creation [Y/n]: Y
+	MyApiInferenceFunction may not have authorization defined, Is this okay? [y/N]: Y
+	Save arguments to configuration file [Y/n]: Y
 	SAM configuration file [samconfig.toml]: 
 	SAM configuration environment [default]: 
 ```
