@@ -3,6 +3,8 @@
 ### Bootstrap CDK
 
 ```shell
+cd cdk-my-api-python
+
 cdk bootstrap
 ```
 
