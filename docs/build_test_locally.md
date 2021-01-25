@@ -54,7 +54,7 @@ our JSON event for the prediction takes the shape:
 We can test a Lambda enabled version of our container by leaving the defaults when running it:
 
 ```shell
-docker run -d -p 9000:8080 myapi
+docker run -d -p 9000:8080 myapiinferencefunction
 ```
 
 and then test that API using curl and standard JSON payload for the data when making a prediction:
