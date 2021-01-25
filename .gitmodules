@@ -1,0 +1,3 @@
+[submodule "cdk-my-api-typescript"]
+	path = cdk-my-api-typescript
+	url = https://github.com/mikeapted/cdk-ml-inference-typescript.git
