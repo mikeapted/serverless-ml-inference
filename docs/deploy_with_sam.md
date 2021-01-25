@@ -84,9 +84,9 @@ curl -X POST -H "Content-Type: application/json" \
 ### View the Logs
 
 ```shell
-sam logs -n MyApiInferenceFunction --stack-name my-api --tail
-sam logs -n MyApiInferenceFunction --stack-name my-api -s '10min ago' -e '2min ago'
-sam logs -n MyApiInferenceFunction --stack-name my-api --filter "sepal_length"
+sam logs -n MyApiInferenceFunction --stack-name my-sam-api --tail
+sam logs -n MyApiInferenceFunction --stack-name my-sam-api -s '10min ago' -e '2min ago'
+sam logs -n MyApiInferenceFunction --stack-name my-sam-api --filter "sepal_length"
 ```
 
 ### Cleanup
@@ -94,7 +94,7 @@ sam logs -n MyApiInferenceFunction --stack-name my-api --filter "sepal_length"
 If you are done experimenting with the API you can tear down the resources by deleting the CloudFormation stack from the AWS Console, or using the commans:
 
 ```shell
-
+aws cloudformation delete-stack --stack-name my-sam-api
 ```
 
 You can now return to the project root.
