@@ -19,12 +19,13 @@ The instructions below cover installation on Unix-based Operating systems like m
 
 If you have not already, configure the aws cli to interact with AWS services using aws configure.
 
-### Submodules
+### Getting Started
 
-This example uses two CDK applications which are kept in their own repositories so you will need to initialize them:
+You will need to clone this repo, and this example uses two CDK applications which are kept in their own repositories so you will need to initialize them:
 
 ```shell
-git submodule update --remote --recursive
+git clone --recurse-submodules -j8 https://github.com/mikeapted/serverless-ml-inference.git
+cd serverless-ml-inference
 ```
 
 ### Deployment
@@ -37,7 +38,7 @@ git submodule update --remote --recursive
 
 ## Cleaning up
 
-To avoid incurring future charges, please delete any resources in your account that you are not using such as files in Amazon S3, Amazon ECS and Amazon Lambda instances, AWS Cloud9 environment and Amazon API Gateway entries.
+To avoid incurring future charges, please delete any resources in your account that you are not using such as files in Amazon S3, AWS Lambda functions, Amazon CloudWatch resources, AWS Cloud9 environments, and Amazon API Gateway entries.
 
 ## License
 
