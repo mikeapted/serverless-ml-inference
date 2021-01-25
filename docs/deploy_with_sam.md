@@ -27,9 +27,9 @@ sam local start-api
 
 curl http://localhost:3000/ 
 
-curl -d @event.container.predict.json \
+curl -d @../events/event.container.predict.json \
     -H "Content-Type: application/json" \
-    -X POST http://localhost:3000/invocations
+    -X POST http://localhost:3000/predict
 ```
 ### Deploy
 
