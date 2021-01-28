@@ -7,7 +7,7 @@ To run the solution, clone/download the project. To deploy the solution follow t
 
 ## Instructions
 
-The instructions below cover installation on Unix-based Operating systems like macOS and Linux. You can also use an AWS Cloud9 enviornment or EC2 instance (recommended: t3.large or higher on Amazon Linux platform) to deploy the solution.
+The instructions below cover installation on Unix-based Operating systems like macOS and Linux. You can also use an AWS Cloud9 enviornment or EC2 instance to deploy the solution.
 
 ### Requirements
 - Git
