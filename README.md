@@ -52,7 +52,8 @@ cd serverless-ml-inference
 2. [Build/Test Our API Locally](docs/build_test_locally.md)
 3. Deploy the API
     - [Deploy with the Serverless Application Model (SAM)](docs/deploy_with_sam.md)
-    - [Deploy with the Cloud Development Kit (CDK)](docs/deploy_with_cdk.md)
+    - [Deploy with the Cloud Development Kit (CDK) using Python](docs/deploy_with_cdk.md)
+    - [Deploy with the Cloud Development Kit (CDK) using TypeScript](docs/deploy_with_cdk_typescript.md)
 
 ## Cleaning up
 
