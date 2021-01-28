@@ -21,10 +21,28 @@ If you have not already, configure the aws cli to interact with AWS services usi
 
 ### Getting Started
 
+If you are using Cloud9, let's clean up some disk space by removing the pre-installed Docker images:
+
+```shell
+docker rmi $(docker images -q)
+```
+
+Finally, let's upgrade the AWS CLI and AWS CDK to the latest version:
+
+```shell
+curl "https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip" -o "awscliv2.zip"
+unzip awscliv2.zip
+sudo ./aws/install
+exec bash
+
+npm i -g --force aws-cdk
+```
+
 You will need to clone this repo, and this example uses two CDK applications which are kept in their own repositories so you will need to initialize them:
 
 ```shell
 git clone --recurse-submodules -j8 https://github.com/mikeapted/serverless-ml-inference.git
+
 cd serverless-ml-inference
 ```
 

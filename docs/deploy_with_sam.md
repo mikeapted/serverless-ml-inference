@@ -40,6 +40,14 @@ aws ecr create-repository --repository-name my-api-repo \
 --image-tag-mutability IMMUTABLE --image-scanning-configuration scanOnPush=true
 ```
 
+Let's print out our account ID (we'll need it in a second):
+
+```shell
+aws sts get-caller-identity
+```
+
+Now we can run the guided deployment process on the first deploy:
+
 ```shell
 sam deploy --guided
 ```

@@ -68,6 +68,12 @@ curl -X POST -H "Content-Type: application/json" \
   "http://localhost:9000/2015-03-31/functions/function/invocations"
 ```
 
+Let's stop our Docker containers to free up the ports for later use:
+
+```shell
+docker stop $(docker ps -q)
+```
+
 You can now return to the project root.
 
 ```shell
