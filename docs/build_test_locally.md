@@ -1,4 +1,4 @@
-# Build an Test Locally
+# Build and Test Locally
 
 We will now use our model artifact to build a FastAPI container, which will serve our predictions.
 
