@@ -1,5 +1,7 @@
 # Serverless ML Inference Example
 
+### Note: This is not Production grade and simply meant as a demo
+
 Serverless ML Inference Example (SMILE) is a simple solution that provides real time ML inference, while maintaing the scale-to-zero and other benefits of serverless. The example starts with local training of a simple model (Iris classification by septal/pedal size). That model is then deployed for inference using one of several options to manage the creation of the infrastructure.
 
 To run the solution, clone/download the project. To deploy the solution follow the steps below:
